@@ -9,10 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
 
 	<script src="./js/jquery-1.9.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+
+	<script>
+		!function ($) {
+			$(function(){
+				$('#myCarousel').carousel()
+				})
+			}(window.jQuery)
+	</script>
+
 </head>
 
 <body>
@@ -31,5 +41,40 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="" alt="">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Placeholder header</h1>
+						<p>Placeholder text</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>2nd header</h1>
+						<p>more</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>3rd header</h1>
+						<p>more</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div>
+
 </body>
 </html>
