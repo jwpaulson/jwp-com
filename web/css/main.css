@@ -1,5 +1,11 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+  color: #5a5a5a;
+  padding-bottom: 40px;
+}
+
+.main {
+  margin: 90px 40px 10px;
 }
 
 /* Remove thin dotted outline to fix Firefox bug*/
