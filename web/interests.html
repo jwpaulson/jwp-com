@@ -17,6 +17,29 @@
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/main.js"></script>
 
+	<!--Add jQuery UI Theme-->
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $('#tabs').tabs();
+  });
+  </script>
+
+	<style type="text/css">
+  #tabs {
+    width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+  }
+
+	.shiny {
+		width: 825px;
+		height: 850px;
+		border: none;
+	}
+	</style>
+
 </head>
 
 <body id="interests">
@@ -36,5 +59,28 @@
 		</div>
 	</div>
 
+	<div class="main">
+		<p>Shiny is an R package to easily build web applications from R code. We developed shiny at RStudio Here are some great examples of shiny in action.</p>
+		<div id="tabs">
+  	  <ul>
+  	    <li><a href="#tab1">Dialect Map</a></li>
+  	    <li><a href="#tab2">Data Simulation</a></li>
+  	    <li><a href="#tab3">Health Care Costs</a></li>
+  	    <li><a href="#tab4">Probability Distributions</a></li>
+  	  </ul>
+  	  <div id="tab1">
+  	  	<iframe class="shiny" src="http://spark.rstudio.com/jkatz/DialectMap/" seamless></iframe>
+  	  </div>
+  	  <div id="tab2">
+  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/wisconsindpi/correlation/" seamless></iframe>
+  	  </div>
+  	  <div id="tab3">
+  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/muschellij2/Shiny_Health_Data/" seamless></iframe>
+  	  </div>
+  	  <div id="tab4">
+  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/wisconsindpi/distribution/" seamless></iframe>
+  	  </div>
+		</div>
+	</div>
 </body>
 </html>
