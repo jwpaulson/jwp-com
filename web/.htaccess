@@ -1,0 +1,17 @@
+ErrorDocument 401 /~jpaulson/web/error/status401.html
+ErrorDocument 403 /~jpaulson/web/error/status403.html
+ErrorDocument 404 /~jpaulson/web/error/status404.html
+
+ExpiresActive On
+
+ExpiresByType text/css                 A86400
+ExpiresByType application/x-javascript A86400
+ExpiresByType image/jpeg               A86400
+ExpiresByType image/gif                A86400
+ExpiresByType image/png                A86400
+
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml 
+AddOutputFilterByType DEFLATE application/x-javascript
