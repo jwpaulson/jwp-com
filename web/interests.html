@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/interests.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
 
 	<link rel="icon" href="./img/favicon.ico">
@@ -25,20 +26,6 @@
     $('#tabs').tabs();
   });
   </script>
-
-	<style type="text/css">
-  #tabs {
-    width: 850px;
-		margin-left: auto;
-		margin-right: auto;
-  }
-
-	.shiny {
-		width: 825px;
-		height: 850px;
-		border: none;
-	}
-	</style>
 
 </head>
 
@@ -61,25 +48,26 @@
 	</div>
 
 	<div class="main">
-		<p>Shiny is an R package to easily build web applications from R code. We developed shiny at RStudio Here are some great examples of shiny in action.</p>
+		<h2>Data visualization</h2>
+		<p>Data visualization has come a long way in a short amount of time. At RStudio, we've developed the shiny package to make it easy to build interactive web applications from R code. Here are some examples of shiny in action.</p>
 		<div id="tabs">
   	  <ul>
   	    <li><a href="#tab1">Dialect Map</a></li>
-  	    <li><a href="#tab2">Data Simulation</a></li>
+  	    <li><a href="#tab2">Probability Distributions</a></li>
   	    <li><a href="#tab3">Health Care Costs</a></li>
-  	    <li><a href="#tab4">Probability Distributions</a></li>
+  	    <li><a href="#tab4">Data Simulation</a></li>
   	  </ul>
   	  <div id="tab1">
   	  	<iframe class="shiny" src="http://spark.rstudio.com/jkatz/DialectMap/" seamless></iframe>
   	  </div>
   	  <div id="tab2">
-  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/wisconsindpi/correlation/" seamless></iframe>
+  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/wisconsindpi/distribution/" seamless></iframe>
   	  </div>
   	  <div id="tab3">
   	  	<iframe class="shiny" src="http://glimmer.rstudio.com/muschellij2/Shiny_Health_Data/" seamless></iframe>
   	  </div>
   	  <div id="tab4">
-  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/wisconsindpi/distribution/" seamless></iframe>
+  	  	<iframe class="shiny" src="http://glimmer.rstudio.com/wisconsindpi/correlation/" seamless></iframe>
   	  </div>
 		</div>
 	</div>
