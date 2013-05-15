@@ -1,3 +1,19 @@
+#headshot {
+  position: absolute;
+  z-index: 11;
+  top: 150px;
+  right: 150px;
+  padding: 3px;
+  border: black solid 1px;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 30px #333333;
+  -moz-box-shadow: 0px 10px 80px #333333;
+}
+
+img {
+  border: solid 1px;
+}
+
 .carousel {
   margin-bottom: 60px;
 }
