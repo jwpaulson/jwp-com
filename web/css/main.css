@@ -37,6 +37,13 @@ a:focus {
 
 /* Responsive css from Bootstrap */
 
+/* Fix print issue in Chrome as a result of bootstrap */
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
 @media (max-width: 979px) {
   .container.navbar-wrapper {
     margin-bottom: 0;
